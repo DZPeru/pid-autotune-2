@@ -1,6 +1,6 @@
-# PID Autotune 2 based (Under adaptation 2020-11-26)
+# PID Autotuner 2 (Under adaptation 2020-11-26)
 
-Based on a programm builded by an example
+Based on a programm builded by an example in Python3
 
 ```
 This project has been created to support tuning a PID controller for a home brewing setup using [CraftBeerPI](https://github.com/Manuel83/craftbeerpi).
