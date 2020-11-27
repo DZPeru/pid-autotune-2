@@ -1,4 +1,4 @@
-# PID Autotune 2 based
+# PID Autotune 2 based (Under adaptation 2020-11-26)
 
 Based on a programm builded by an example
 
@@ -8,14 +8,16 @@ It consists of a brewing kettle simulation, a PID controller (based on [Arduino 
 ```
 
 # Installation
-1. Install _git_ and _python3_
-2. Clone this repository:  
-`git clone https://github.com/hirschmann/pid-autotune.git`
-3. Install project dependencies:  
-`pip install matplotlib`
 
+1. Clone this repository:
+`git clone https://github.com/DZPeru/pid-autotune-2`
+2. Install the requirements:
+`pip3 install -r requirements.txt` or `pip install -r requirements.txt` 
+3. Run code.
+
+<!-- 
 After you have completed these steps, you should be able to run _sim.py_ as shown above. If plots are not shown, you have to configure the matplotlib backend, see [What is a backend?](http://matplotlib.org/faq/usage_faq.html#what-is-a-backend)
-
+-->
 
 ## Options
 
@@ -46,8 +48,6 @@ optional arguments:
   --minout x            minimum PID controller output (default: 0)
   --maxout x            maximum PID controller output (default: 100)
 ```
-
-
 
 ### Project goals
 
