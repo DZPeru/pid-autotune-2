@@ -69,11 +69,11 @@ Example:
 List of autotuning algorithms:
 
 ```
-- ziegler-nichols
+- ziegler-nichols (PID)
+-- pessen-integral
+-- some-overshoot
+-- no-overshoot
+- brewing
 - tyreus-luyben
 - ciancone-marlin
-- pessen-integral
-- some-overshoot
-- no-overshoot
-- brewing
 ```
