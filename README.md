@@ -10,9 +10,13 @@ It consists of a brewing kettle simulation, a PID controller (based on [Arduino 
 # Installation
 
 1. Clone this repository:
+
 `git clone https://github.com/DZPeru/pid-autotune-2`
+
 2. Install the requirements:
+
 `pip3 install -r requirements.txt` or `pip install -r requirements.txt` 
+
 3. Run code.
 
 <!-- 
