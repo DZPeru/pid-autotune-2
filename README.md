@@ -25,6 +25,14 @@ After you have completed these steps, you should be able to run _sim.py_ as show
 
 ## Options
 
+1. Simulate
+
+Example:
+
+`sim.py --pid 'reference' 98 0.66 230 --pid 'Kp too low' 30 0.66 230 --pid 'Ki too low' 98 0.01 230`
+
+Details:
+
 ```
 usage: sim.py [-h] [-p name kp ki kd] [-a] [-v] [-e] [-n] [-t T] [-s T]
               [--ambient T] [-i t] [-d t] [--sampletime t] [--volume V]
@@ -53,62 +61,19 @@ optional arguments:
   --maxout x            maximum PID controller output (default: 100)
 ```
 
-### Project goals
+2. Auto-tuning PID
 
-- allow users to find PID parameters which provide a sufficient basis for further manual tuning
-- allow users to compare different PID parameters
-- help users to understand how different PID parameters (Kp, Ki, Kd) influence a PID controller's behavior (not only limited to home brewing setups)
-- speed up auto tuning
-
-## PID comparison
-
-Compare different PID parameters using the default kettle setup:  
-`sim.py --pid 'reference' 98 0.66 230 --pid 'Kp too low' 30 0.66 230 --pid 'Ki too low' 98 0.01 230`
-
-![PID parameters comparison](images/pid-comparison.png)
-
-## PID autotune simulation
-
-Simulate a PID autotune run on a 50l kettle with a 4 kW heater:  
+Example:
 `sim.py --atune --volume 50 --power 4`
 
-![PID autotune simulation](images/pid-atune.png)
-
-Generated PID parameters using different tuning rules:
+List of autotuning algorithms:
 
 ```
-rule: ziegler-nichols
-Kp: 7.66141138481997
-Ki: 0.4086086071903984
-Kd: 35.91286586634361
-
-rule: tyreus-luyben
-Kp: 5.920181524633613
-Ki: 0.07104217829560336
-Kd: 35.239175741866745
-
-rule: ciancone-marlin
-Kp: 3.9467876830890756
-Ki: 0.46308975481578485
-Kd: 18.272165199486462
-
-rule: pessen-integral
-Kp: 9.30314239585282
-Ki: 0.6202094930568547
-Kd: 52.46132929992192
-
-rule: some-overshoot
-Kp: 4.341466451397983
-Ki: 0.2315448774078924
-Kd: 54.26833064247478
-
-rule: no-overshoot
-Kp: 2.60487987083879
-Ki: 0.13892692644473545
-Kd: 32.56099838548487
-
-rule: brewing
-Kp: 104.1951948335516
-Ki: 0.8335615586684127
-Kd: 205.64841085569392
+- ziegler-nichols
+- tyreus-luyben
+- ciancone-marlin
+- pessen-integral
+- some-overshoot
+- no-overshoot
+- brewing
 ```
