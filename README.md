@@ -70,9 +70,9 @@ List of autotuning algorithms:
 
 ```
 - ziegler-nichols (PID)
--- pessen-integral
--- some-overshoot
--- no-overshoot
+-- pessen-integral (PID)
+-- some-overshoot (PID)
+-- no-overshoot (PID)
 - brewing
 - tyreus-luyben
 - ciancone-marlin
