@@ -3,7 +3,7 @@ import logging
 
 # Based on Arduino PID Library
 # See https://github.com/br3ttb/Arduino-PID-Library
-class PIDArduino(object):
+class PID(object):
     """A proportional-integral-derivative controller.
 
     Args:
