@@ -222,7 +222,7 @@ class PD(object):
         p = self._Kp * error
         d = -(self._Kd * input_diff)
 
-        # Compute PID Output
+        # Compute PD Output
         self._last_output = p + d
         self._last_output = min(self._last_output, self._out_max)
         self._last_output = max(self._last_output, self._out_min)
