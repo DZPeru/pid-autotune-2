@@ -1,8 +1,18 @@
 #!/bin/python3
 
-from pid import PIDArduino
+# Different controllers, all listed are available
+from classic_controllers import P
+from classic_controllers import PD
+from classic_controllers import PI
+from classic_controllers import PID
+
+# Autotuner
 from autotune import PIDAutotune
+
+# Plant (Will  be removed and replaced for a user-construction)
 from kettle import Kettle
+
+# Utils
 from collections import deque, namedtuple
 import sys
 import math
