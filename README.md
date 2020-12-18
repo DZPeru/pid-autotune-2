@@ -1,4 +1,4 @@
-# PID Autotuner 2 (Under adaptation 2020-11-26)
+# (Under adaptation 2020-11-26) PID Autotuner 2 
 
 Based on a programm builded by an example in Python3
 
